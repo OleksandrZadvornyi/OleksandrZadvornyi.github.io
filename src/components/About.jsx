@@ -71,7 +71,7 @@ const About = () => {
             </p>
 
             <p>
-              I am currently looking for opportunities to apply my full-stack and research skills in a challenging environment.
+              I am currently looking for opportunities to apply my engineering and research skills in a challenging environment.
             </p>
 
             {/* Quick Tech Tags */}
