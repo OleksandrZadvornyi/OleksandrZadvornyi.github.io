@@ -4,7 +4,7 @@ import { LuAward, LuBookOpen, LuTerminal } from "react-icons/lu";
 const About = () => {
   return (
     <section id="about" className="py-20 bg-slate-900 relative overflow-hidden">
-      {/* Background Decor - simple blurred orbs */}
+      {/* Background Decor */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
 
@@ -26,8 +26,8 @@ const About = () => {
                   <LuAward size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white">Master's Degree</h3>
-                  <p className="text-gray-400 text-sm">Software Engineering</p>
+                  <h3 className="text-xl font-semibold text-white">Education</h3>
+                  <p className="text-gray-400 text-sm">Master of Software Engineering</p>
                   <p className="text-gray-500 text-xs mt-1">Graduated Dec 2025</p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const About = () => {
                   <LuTerminal size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white">Clean Code Enthusiast</h3>
+                  <h3 className="text-xl font-semibold text-white">Clean Code</h3>
                   <p className="text-gray-400 text-sm">Design Patterns & Architecture</p>
                   <p className="text-gray-500 text-xs mt-1">Focused on scalability & readability</p>
                 </div>
@@ -63,15 +63,15 @@ const About = () => {
           {/* Right Column: Narrative Bio */}
           <div className="text-gray-300 space-y-6 leading-relaxed">
             <p className="text-lg">
-              I am a fresh <span className="text-white font-semibold">Master of Software Engineering</span> graduate with a passion for solving complex problems through code. My journey in tech is driven by a curiosity for how systems work - from the low-level logic of <span className="text-blue-400">C++</span> to the dynamic capabilities of <span className="text-yellow-400">JavaScript</span> and the data-driven power of <span className="text-emerald-400">Python</span>.
+              I am a <span className="text-white font-semibold">Software Engineer</span> with a passion for solving complex problems through code. My journey in tech is driven by a curiosity for how systems work - from the low-level logic of <span className="text-blue-400">C++</span> to the dynamic capabilities of <span className="text-yellow-400">JavaScript</span> and the data-driven power of <span className="text-emerald-400">Python</span>.
             </p>
             
             <p>
-              Unlike a traditional developer, I bridge the gap between application development and data science. Whether I'm building a responsive React dashboard, architecting a Node.js backend or training a Time-Series Transformer model for weather forecasting, I prioritize <span className="text-white">performance, accessibility and clean architecture</span>.
+              I bridge the gap between application development and data science. Whether I'm building a responsive React dashboard, architecting a Node.js backend, or training a Time-Series Transformer model, I prioritize <span className="text-white">performance, accessibility, and clean architecture</span>.
             </p>
 
             <p>
-              I am currently looking for opportunities to apply my engineering and research skills in a challenging environment.
+              I am currently looking for opportunities to apply my engineering and research skills in a challenging environment where I can contribute to meaningful projects.
             </p>
 
             {/* Quick Tech Tags */}
