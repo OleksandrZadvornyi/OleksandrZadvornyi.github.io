@@ -13,15 +13,15 @@ const Projects = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 bg-slate-900">
+    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Featured <span className="text-blue-500">Projects</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
             A selection of my work in Software Development, Data Science and QA Automation.
           </p>
         </div>
@@ -35,8 +35,8 @@ const Projects = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 
                 ${activeCategory === category 
-                  ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25 scale-105' 
-                  : 'bg-slate-800 text-gray-400 hover:bg-slate-700 hover:text-white'
+                  ? 'bg-blue-600 text-slate-900 dark:text-white shadow-lg shadow-blue-500/25 scale-105' 
+                  : 'bg-white dark:bg-slate-800 shadow-md text-slate-600 dark:text-gray-400 hover:bg-slate-700 hover:text-slate-900 dark:text-white'
                 }`}
             >
               {category}

@@ -5,7 +5,7 @@ import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-slate-900 pt-16 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-900 pt-16 relative overflow-hidden">
       
       {/* Background Decor (adds depth behind photo) */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -15,11 +15,11 @@ const Hero = () => {
           
           {/* LEFT: Text Content */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
               Hi, I'm <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-emerald-400">Oleksandr</span>
             </h1>
 
-            <p className="text-xl text-gray-400 max-w-2xl mb-8 leading-relaxed">
+            <p className="text-xl text-slate-600 dark:text-gray-400 max-w-2xl mb-8 leading-relaxed">
               Software Engineer specializing in scalable web applications and data intelligence. 
               I bridge the gap between application development and research using
               <span className="text-gray-200 font-semibold"> Python</span>, 
@@ -31,27 +31,27 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a 
                 href="#projects" 
-                className="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-500 transition-all hover:scale-105 shadow-lg shadow-blue-500/25"
+                className="px-8 py-3 bg-blue-600 text-slate-900 dark:text-white rounded-lg font-medium hover:bg-blue-500 transition-all hover:scale-105 shadow-lg shadow-blue-500/25"
               >
                 View Projects
               </a>
               <a 
                 href="#contact" 
-                className="px-8 py-3 bg-slate-800 text-white rounded-lg font-medium hover:bg-slate-700 transition-all border border-slate-700"
+                className="px-8 py-3 bg-white dark:bg-slate-800 shadow-md text-slate-900 dark:text-white rounded-lg font-medium hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700"
               >
                 Contact Me
               </a>
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-6 text-gray-400">
-              <a href="https://github.com/OleksandrZadvornyi" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <div className="flex gap-6 text-slate-600 dark:text-gray-400">
+              <a href="https://github.com/OleksandrZadvornyi" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:text-white transition-colors">
                 <FaGithub size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/oleksandr-zadvornyi-ab955131a" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/oleksandr-zadvornyi-ab955131a" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:text-white transition-colors">
                 <FaLinkedin size={24} />
               </a>
-              <a href="mailto:zadvornyi.alex16@gmail.com" className="hover:text-white transition-colors">
+              <a href="mailto:zadvornyi.alex16@gmail.com" className="hover:text-slate-900 dark:text-white transition-colors">
                 <LuMail size={24} />
               </a>
             </div>
