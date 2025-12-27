@@ -36,7 +36,7 @@ const Projects = () => {
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 
                 ${activeCategory === category 
                   ? 'bg-blue-600 text-slate-900 dark:text-white shadow-lg shadow-blue-500/25 scale-105' 
-                  : 'bg-white dark:bg-slate-800 shadow-md text-slate-600 dark:text-gray-400 hover:bg-slate-700 hover:text-slate-900 dark:text-white'
+                  : 'bg-white dark:bg-slate-800 shadow-md text-slate-600 hover:bg-slate-700 hover:text-slate-900 dark:text-white'
                 }`}
             >
               {category}
