@@ -5,7 +5,10 @@ import {
     LuLayoutDashboard,
     LuTerminal,
     LuActivity,
-    LuSearch
+    LuSearch,
+    LuMonitor,
+    LuGlobe,
+    LuBookOpen
 } from "react-icons/lu";
 
 export const projects = [
@@ -88,5 +91,35 @@ export const projects = [
         demo: null,
         icon: LuTerminal,
         color: "text-pink-400"
+    },
+    {
+        title: "Kal-Hans Frontend",
+        description: "Modern e-commerce UI for the Kal-Hans brand. Features responsive design and connects to the Node.js backend.",
+        tech: ["React", "TypeScript", "Tailwind", "Vite"],
+        category: "Web Dev",
+        github: "https://github.com/OleksandrZadvornyi/kal-hans-landing",
+        demo: "https://kal-hans.netlify.app/",
+        icon: LuMonitor,
+        color: "text-teal-400"
+    },
+    {
+        title: "Dental Clinic Multi-Lang",
+        description: "A multilingual landing page supporting 5 languages. Built with a custom Webpack configuration and i18next.",
+        tech: ["JavaScript", "Webpack", "i18next", "SCSS"],
+        category: "Web Dev",
+        github: "https://github.com/OleksandrZadvornyi/dental-clinic-landing",
+        demo: "https://denticss.netlify.app/",
+        icon: LuGlobe,
+        color: "text-cyan-500"
+    },
+    {
+        title: "Educate Platform",
+        description: "A responsive education platform landing page featuring modern animations and multi-language support.",
+        tech: ["Vite", "JavaScript", "CSS3", "Animations"],
+        category: "Web Dev",
+        github: "https://github.com/OleksandrZadvornyi/educate-landing",
+        demo: "https://e-learn-website.netlify.app/",
+        icon: LuBookOpen,
+        color: "text-indigo-400"
     }
 ];
