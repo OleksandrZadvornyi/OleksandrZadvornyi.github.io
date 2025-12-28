@@ -12,11 +12,11 @@ const Navbar = ({ theme, toggleTheme }) => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 backdrop-blur-md transition-colors duration-300 bg-white/80 border-slate-200 dark:bg-slate-50 dark:bg-slate-900/80 dark:border-slate-800 border-b">
+    <nav className="fixed w-full z-50 backdrop-blur-md transition-colors duration-300 bg-white/80 border-slate-200 dark:bg-slate-900/80 dark:border-slate-800 border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="shrink-0">
-            <a href="#" className="text-xl font-bold tracking-wider text-slate-900 dark:text-slate-900 dark:text-white">
+            <a href="#" className="text-xl font-bold tracking-wider text-slate-900 dark:text-white">
               OZ<span className="text-blue-500">.</span>
             </a>
           </div>
@@ -47,13 +47,13 @@ const Navbar = ({ theme, toggleTheme }) => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
              {/* Mobile Theme Toggle */}
-            <button onClick={toggleTheme} className="text-slate-600 dark:text-slate-600 dark:text-gray-400">
+            <button onClick={toggleTheme} className="text-slate-600 dark:text-gray-400">
                {theme === 'dark' ? <LuSun size={20} /> : <LuMoon size={20} />}
             </button>
             
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 dark:text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-slate-900 dark:text-white"
+              className="text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-slate-900"
             >
               {isOpen ? <LuX size={24} /> : <LuMenu size={24} />}
             </button>
@@ -63,7 +63,7 @@ const Navbar = ({ theme, toggleTheme }) => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-50 dark:bg-slate-900">
+        <div className="md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <a

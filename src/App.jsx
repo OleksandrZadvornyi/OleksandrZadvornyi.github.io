@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen transition-colors duration-300 bg-slate-50 text-slate-900 dark:bg-slate-50 dark:bg-slate-900 dark:text-slate-900 dark:text-white selection:bg-blue-500/30">
+    <div className="min-h-screen transition-colors duration-300 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-900 selection:bg-blue-500/30">
       {/* Pass theme control to Navbar */}
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Hero />
