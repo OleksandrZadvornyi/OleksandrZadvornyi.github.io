@@ -1,4 +1,3 @@
-import React from 'react';
 import { LuExternalLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 
@@ -39,9 +38,9 @@ const ProjectCard = ({ project }) => {
 
         {/* Links */}
         <div className="flex gap-4 pt-4 border-t border-slate-200 dark:border-slate-700/50">
-          <a 
-            href={project.github} 
-            target="_blank" 
+          <a
+            href={project.github}
+            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-slate-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors"
           >
@@ -49,9 +48,9 @@ const ProjectCard = ({ project }) => {
             Code
           </a>
           {project.demo && (
-            <a 
-              href={project.demo} 
-              target="_blank" 
+            <a
+              href={project.demo}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors"
             >

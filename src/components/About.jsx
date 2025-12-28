@@ -1,4 +1,3 @@
-import React from 'react';
 import { LuAward, LuBookOpen, LuTerminal } from "react-icons/lu";
 
 const About = () => {
@@ -17,7 +16,7 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Column: Education & Stats Card */}
           <div className="space-y-6">
             <div className="bg-white dark:bg-slate-800 shadow-md/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-500/50 transition-colors">
@@ -65,7 +64,7 @@ const About = () => {
             <p className="text-lg">
               I am a <span className="text-slate-900 dark:text-white font-semibold">Software Engineer</span> with a passion for solving complex problems through code. My journey in tech is driven by a curiosity for how systems work - from the low-level logic of <span className="text-blue-400">C++</span> to the dynamic capabilities of <span className="text-yellow-400">JavaScript</span> and the data-driven power of <span className="text-emerald-400">Python</span>.
             </p>
-            
+
             <p>
               I bridge the gap between application development and data science. Whether I'm building a responsive React dashboard, architecting a Node.js backend, or training a Time-Series Transformer model, I prioritize <span className="text-slate-900 dark:text-white">performance, accessibility, and clean architecture</span>.
             </p>

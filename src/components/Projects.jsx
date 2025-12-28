@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
 
@@ -8,14 +8,14 @@ const Projects = () => {
   // Get unique categories from data
   const categories = ['All', ...new Set(projects.map(p => p.category))];
 
-  const filteredProjects = activeCategory === 'All' 
-    ? projects 
+  const filteredProjects = activeCategory === 'All'
+    ? projects
     : projects.filter(project => project.category === activeCategory);
 
   return (
     <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
@@ -34,8 +34,8 @@ const Projects = () => {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 
-                ${activeCategory === category 
-                  ? 'bg-blue-600 text-slate-900 dark:text-white shadow-lg shadow-blue-500/25 scale-105' 
+                ${activeCategory === category
+                  ? 'bg-blue-600 text-slate-900 dark:text-white shadow-lg shadow-blue-500/25 scale-105'
                   : 'bg-white dark:bg-slate-800 shadow-md text-slate-600 hover:bg-slate-700 hover:text-slate-900 dark:text-white'
                 }`}
             >
@@ -53,9 +53,9 @@ const Projects = () => {
 
         {/* Github Link */}
         <div className="text-center mt-12">
-          <a 
-            href="https://github.com/OleksandrZadvornyi?tab=repositories" 
-            target="_blank" 
+          <a
+            href="https://github.com/OleksandrZadvornyi?tab=repositories"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors"
           >

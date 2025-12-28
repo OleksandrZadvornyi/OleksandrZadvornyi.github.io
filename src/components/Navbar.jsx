@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { LuMenu, LuX, LuSun, LuMoon } from "react-icons/lu"; 
+import { useState } from 'react';
+import { LuMenu, LuX, LuSun, LuMoon } from "react-icons/lu";
 
-const Navbar = ({ theme, toggleTheme }) => { 
+const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -33,7 +33,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                   {link.name}
                 </a>
               ))}
-              
+
               {/* Theme Toggle Button */}
               <button
                 onClick={toggleTheme}
@@ -47,11 +47,11 @@ const Navbar = ({ theme, toggleTheme }) => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-             {/* Mobile Theme Toggle */}
+            {/* Mobile Theme Toggle */}
             <button onClick={toggleTheme} className="text-slate-600 dark:text-gray-400">
-               {theme === 'dark' ? <LuSun size={20} /> : <LuMoon size={20} />}
+              {theme === 'dark' ? <LuSun size={20} /> : <LuMoon size={20} />}
             </button>
-            
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-slate-900"
