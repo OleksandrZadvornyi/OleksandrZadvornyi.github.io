@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Publications from './components/Publications';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -33,6 +34,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Publications />
       <Skills />
       <Contact />
       <Footer />

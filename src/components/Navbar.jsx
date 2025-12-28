@@ -7,6 +7,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Research', href: '#publications' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
   ];
