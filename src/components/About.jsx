@@ -2,7 +2,7 @@ import { LuAward, LuBookOpen, LuTerminal } from "react-icons/lu";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900 relative overflow-hidden">
+    <section id="about" className="py-20 bg-slate-50 dark:bg-slate-900 relative overflow-hidden border-t border-slate-800">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>

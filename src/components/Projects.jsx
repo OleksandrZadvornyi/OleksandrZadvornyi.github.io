@@ -13,7 +13,7 @@ const Projects = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900">
+    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
