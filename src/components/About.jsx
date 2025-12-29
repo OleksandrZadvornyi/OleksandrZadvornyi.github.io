@@ -35,12 +35,12 @@ const About = () => {
             <div className="bg-white dark:bg-slate-800 shadow-md/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-emerald-500/50 transition-colors">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-emerald-500/20 rounded-lg text-emerald-400">
-                  <LuBookOpen size={24} />
+                  <LuTerminal size={24} /> {/* Changed icon to Terminal or Shield */}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Research Focus</h3>
-                  <p className="text-slate-600 dark:text-gray-400 text-sm">Deep Learning & Time Series</p>
-                  <p className="text-gray-500 text-xs mt-1">Published Thesis on Forecasting</p>
+                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">QA Automation</h3>
+                  <p className="text-slate-600 dark:text-gray-400 text-sm">End-to-End Testing</p>
+                  <p className="text-gray-500 text-xs mt-1">WebdriverIO & CI/CD Pipelines</p>
                 </div>
               </div>
             </div>
@@ -62,20 +62,20 @@ const About = () => {
           {/* Right Column: Narrative Bio */}
           <div className="text-slate-600 dark:text-gray-300 space-y-6 leading-relaxed">
             <p className="text-lg">
-              I am a <span className="text-slate-900 dark:text-white font-semibold">Software Engineer</span> with a passion for solving complex problems through code. My journey in tech is driven by a curiosity for how systems work - from the low-level logic of <span className="text-blue-400">C++</span> to the dynamic capabilities of <span className="text-yellow-400">JavaScript</span> and the data-driven power of <span className="text-emerald-400">Python</span>.
+              I am a <span className="text-slate-900 dark:text-white font-semibold">Software Engineer</span> focused on the web ecosystem. My journey is driven by a desire to build applications that are not only performant but also robust and reliable. I specialize in <span className="text-blue-400">TypeScript</span>, <span className="text-blue-400">React</span> and <span className="text-emerald-400">Test Automation</span>.
             </p>
 
             <p>
-              I bridge the gap between application development and data science. Whether I'm building a responsive React dashboard, architecting a Node.js backend, or training a Time-Series Transformer model, I prioritize <span className="text-slate-900 dark:text-white">performance, accessibility, and clean architecture</span>.
+              I distinguish myself by handling the full development lifecycle. Whether I'm building a responsive frontend interface or writing complex E2E test suites in <span className="text-slate-900 dark:text-white">WebdriverIO</span>, I prioritize code quality and stability.
             </p>
 
             <p>
-              I am currently looking for opportunities to apply my engineering and research skills in a challenging environment where I can contribute to meaningful projects.
+              While my academic background is in Data Science (giving me strong analytical skills), my professional passion lies in <span className="text-slate-900 dark:text-white">Web Development</span> and <span className="text-slate-900 dark:text-white">Quality Assurance</span>.
             </p>
 
-            {/* Quick Tech Tags */}
+            {/* Quick Tech Tags - Updated order */}
             <div className="pt-4 flex flex-wrap gap-3">
-              {['Python', 'C++', 'React', 'TypeScript', 'WebdriverIO', 'PyTorch'].map((tech) => (
+              {['TypeScript', 'React', 'WebdriverIO', 'JavaScript', 'Node.js', 'Python'].map((tech) => (
                 <span key={tech} className="px-3 py-1 bg-white dark:bg-slate-800 shadow-md text-slate-600 dark:text-gray-300 text-sm rounded-full border border-slate-200 dark:border-slate-700">
                   {tech}
                 </span>

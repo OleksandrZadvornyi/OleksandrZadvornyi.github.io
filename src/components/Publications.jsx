@@ -61,8 +61,8 @@ const Publications = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Research & <span className="text-blue-500">Publications</span>
           </h2>
-          <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Applying academic rigor to real-world engineering problems. My research focuses on AI, Time Series Analysis, and Code Quality.
+          <p className="text-slate-600 dark:text-gray-400 max-w-3xl mx-auto">
+            My academic background in Computer Science and research demonstrates my ability to solve complex algorithmic problems. My research focuses on AI, Time Series Analysis and Code Quality.
           </p>
         </div>
 

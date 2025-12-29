@@ -31,40 +31,40 @@ const SkillCategory = ({ title, icon: Icon, skills, color }) => (
 const Skills = () => {
   const categories = [
     {
-      title: "Languages",
-      icon: LuCode,
-      color: "bg-green-500",
-      skills: ["Python", "JavaScript", "TypeScript", "C++", "SQL"]
-    },
-    {
-      title: "Frontend",
+      title: "Frontend Development",
       icon: LuLayoutDashboard,
       color: "bg-pink-500",
-      skills: ["React", "Tailwind CSS", "Vite", "HTML5/CSS3"]
-    },
-    {
-      title: "Backend & Cloud",
-      icon: LuServer,
-      color: "bg-emerald-500",
-      skills: ["Node.js", "Express", "MongoDB", "Firebase", "REST APIs"]
-    },
-    {
-      title: "Data Science & ML",
-      icon: LuCpu,
-      color: "bg-purple-500",
-      skills: ["PyTorch", "Pandas", "GluonTS", "Dask", "Time Series Analysis"]
+      skills: ["React", "TypeScript", "Tailwind CSS", "Vite", "HTML5/CSS3"]
     },
     {
       title: "QA Automation",
       icon: LuTerminal,
       color: "bg-orange-500",
-      skills: ["WebdriverIO", "Selenium", "Mocha/Chai", "Page Object Model"]
+      skills: ["WebdriverIO", "Selenium", "Mocha/Chai", "Page Object Model", "E2E Testing"]
     },
     {
-      title: "Tools & DevOps",
+      title: "Backend & Cloud",
+      icon: LuServer,
+      color: "bg-emerald-500",
+      skills: ["Node.js", "Express", "MongoDB", "REST APIs", "Git/GitHub"]
+    },
+    {
+      title: "Languages",
+      icon: LuCode,
+      color: "bg-green-500",
+      skills: ["JavaScript (ES6+)", "TypeScript", "Python", "C++", "SQL"]
+    },
+    {
+      title: "Data Science & Research",
+      icon: LuCpu,
+      color: "bg-purple-500",
+      skills: ["Pandas", "PyTorch", "Time Series Analysis", "Jupyter"]
+    },
+    {
+      title: "Tools",
       icon: LuDatabase,
       color: "bg-yellow-500",
-      skills: ["Git", "Docker", "VS Code", "Jupyter"]
+      skills: ["VS Code", "Docker", "Edge DevTools"]
     }
   ];
 

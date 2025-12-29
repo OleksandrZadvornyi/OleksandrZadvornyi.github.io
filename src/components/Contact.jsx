@@ -11,7 +11,7 @@ const Contact = () => {
         </h2>
 
         <p className="text-slate-600 dark:text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-          I am currently looking for new opportunities in Software Engineering and Data Science.
+          I am currently looking for new opportunities in <span className="font-semibold text-slate-900 dark:text-white">Web Development</span> and <span className="font-semibold text-slate-900 dark:text-white">QA Automation</span>.
           Whether you have a question, a project idea or just want to say hi, feel free to reach out!
         </p>
 

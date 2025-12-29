@@ -30,6 +30,6 @@ export const publications = [
         authors: "O. Pastukh, V. Yatsyshyn, O. Zadvornyi",
         link: null,
         tags: ["LLM", "Prompt Engineering", "Code Quality", "R&D"],
-        summary: "Proposed a novel standardized metric for evaluating AI-generated code. The framework assesses security, semantic quality, and structural integrity, aiming to make LLM-generated code production-ready."
+        summary: "Proposed a novel standardized metric for evaluating AI-generated code. The framework assesses security, semantic quality and structural integrity, aiming to make LLM-generated code production-ready."
     }
 ];
