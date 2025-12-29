@@ -1,4 +1,4 @@
-import { LuMail, LuArrowDown } from "react-icons/lu";
+import { LuMail, LuArrowDown, LuDownload } from "react-icons/lu";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profileImg from '../assets/profile.jpg';
 
@@ -35,10 +35,12 @@ const Hero = () => {
                 View Projects
               </a>
               <a
-                href="#contact"
-                className="px-8 py-3 bg-white dark:bg-slate-800 shadow-md text-slate-900 dark:text-white rounded-lg font-medium hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700"
+                href="/Oleksandr_Zadvornyi_CV.pdf"
+                download="Oleksandr_Zadvornyi_CV.pdf"
+                className="px-8 py-3 flex items-center gap-2 bg-white dark:bg-slate-800 shadow-md text-slate-900 dark:text-white rounded-lg font-medium hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700"
               >
-                Contact Me
+                <LuDownload size={20} />
+                Download CV
               </a>
             </div>
 
