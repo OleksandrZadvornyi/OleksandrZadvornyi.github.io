@@ -1,8 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import { LuExternalLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
+  const { t, i18n } = useTranslation();
   const IconComponent = project.icon;
+
+  const lang = i18n.language === 'ua' ? 'ua' : 'en';
+
+  const title = project.title[lang] || project.title['en'];
+  const description = project.description[lang] || project.description['en'];
 
   return (
     <div className="group bg-white dark:bg-slate-800 shadow-md rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -19,12 +26,12 @@ const ProjectCard = ({ project }) => {
         <div className="flex justify-between items-start mb-4">
           <div>
             <span className="text-blue-400 text-xs font-semibold tracking-wider uppercase">{project.category}</span>
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mt-1 group-hover:text-blue-400 transition-colors">{project.title}</h3>
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white mt-1 group-hover:text-blue-400 transition-colors">{title}</h3>
           </div>
         </div>
 
         <p className="text-slate-600 dark:text-gray-400 text-sm mb-6 line-clamp-3">
-          {project.description}
+          {description}
         </p>
 
         {/* Tech Stack Tags */}
@@ -45,7 +52,7 @@ const ProjectCard = ({ project }) => {
             className="flex items-center gap-2 text-sm text-slate-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition-colors"
           >
             <FaGithub size={16} />
-            Code
+            {t('projects.code')}
           </a>
           {project.demo && (
             <a
@@ -55,7 +62,7 @@ const ProjectCard = ({ project }) => {
               className="flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors"
             >
               <LuExternalLink size={16} />
-              Live Demo
+              {t('projects.demo')}
             </a>
           )}
         </div>

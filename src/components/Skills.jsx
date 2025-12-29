@@ -6,6 +6,7 @@ import {
   LuCpu,
   LuLayoutDashboard
 } from "react-icons/lu";
+import { useTranslation } from 'react-i18next';
 
 const SkillCategory = ({ title, icon: Icon, skills, color }) => (
   <div className="bg-white dark:bg-slate-800 shadow-md p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-slate-600 transition-colors">
@@ -29,39 +30,41 @@ const SkillCategory = ({ title, icon: Icon, skills, color }) => (
 );
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const categories = [
     {
-      title: "Frontend Development",
+      title: t('skills.categories.frontend'),
       icon: LuLayoutDashboard,
       color: "bg-pink-500",
       skills: ["React", "TypeScript", "Tailwind CSS", "Vite", "HTML5/CSS3"]
     },
     {
-      title: "QA Automation",
+      title: t('skills.categories.qa'),
       icon: LuTerminal,
       color: "bg-orange-500",
       skills: ["WebdriverIO", "Selenium", "Mocha/Chai", "Page Object Model", "E2E Testing"]
     },
     {
-      title: "Backend & Cloud",
+      title: t('skills.categories.backend'),
       icon: LuServer,
       color: "bg-emerald-500",
       skills: ["Node.js", "Express", "MongoDB", "REST APIs", "Git/GitHub"]
     },
     {
-      title: "Languages",
+      title: t('skills.categories.languages'),
       icon: LuCode,
       color: "bg-green-500",
       skills: ["JavaScript (ES6+)", "TypeScript", "Python", "C++", "SQL"]
     },
     {
-      title: "Data Science & Research",
+      title: t('skills.categories.data'),
       icon: LuCpu,
       color: "bg-purple-500",
       skills: ["Pandas", "PyTorch", "Time Series Analysis", "Jupyter"]
     },
     {
-      title: "Tools",
+      title: t('skills.categories.tools'),
       icon: LuDatabase,
       color: "bg-yellow-500",
       skills: ["VS Code", "Docker", "Edge DevTools"]
@@ -74,10 +77,10 @@ const Skills = () => {
 
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Technical <span className="text-blue-500">Skills</span>
+            {t('skills.title')} <span className="text-blue-500">{t('skills.highlight')}</span>
           </h2>
           <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A comprehensive toolset for building scalable web applications and data-driven solutions.
+            {t('skills.subtitle')}
           </p>
         </div>
 

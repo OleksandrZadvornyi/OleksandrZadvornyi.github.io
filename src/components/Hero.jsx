@@ -1,8 +1,12 @@
 import { LuMail, LuArrowDown, LuDownload } from "react-icons/lu";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
+
 import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-900 pt-16 relative overflow-hidden">
 
@@ -13,16 +17,16 @@ const Hero = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 
           {/* LEFT: Text Content */}
-          <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex-3 flex flex-col items-center md:items-start text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-emerald-400">Oleksandr</span>
+              {t('hero.greeting')} <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-emerald-400">{t('hero.name')}</span>
             </h1>
 
             <p className="text-xl text-slate-600 dark:text-gray-400 max-w-2xl mb-8 leading-relaxed">
-              Software Engineer specializing in modern web development and test automation.
-              I build reliable, scalable applications and ensure quality using
+              {t('hero.role')}
+              {t('hero.description')}
               <span className="text-slate-700 dark:text-gray-200 font-semibold"> TypeScript</span>,
-              <span className="text-slate-700 dark:text-gray-200 font-semibold"> React</span> and
+              <span className="text-slate-700 dark:text-gray-200 font-semibold"> React</span> {t('hero.and')}
               <span className="text-slate-700 dark:text-gray-200 font-semibold"> WebdriverIO</span>.
             </p>
 
@@ -32,7 +36,7 @@ const Hero = () => {
                 href="#projects"
                 className="px-8 py-3 bg-blue-600 text-slate-900 dark:text-white rounded-lg font-medium hover:bg-blue-500 transition-all hover:scale-105 shadow-lg shadow-blue-500/25"
               >
-                View Projects
+                {t('hero.buttons.projects')}
               </a>
               <a
                 href="/Oleksandr_Zadvornyi_CV.pdf"
@@ -40,7 +44,7 @@ const Hero = () => {
                 className="px-8 py-3 flex items-center gap-2 bg-white dark:bg-slate-800 shadow-md text-slate-900 dark:text-white rounded-lg font-medium hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700"
               >
                 <LuDownload size={20} />
-                Download CV
+                {t('hero.buttons.cv')}
               </a>
             </div>
 
@@ -59,7 +63,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT: Profile Photo */}
-          <div className="flex-1 flex justify-center md:justify-end relative">
+          <div className="flex-2 flex justify-center md:justify-end relative">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-linear-to-tr from-blue-500 to-emerald-500 blur-sm opacity-50 animate-pulse"></div>
 

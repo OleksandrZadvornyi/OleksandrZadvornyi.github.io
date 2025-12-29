@@ -12,8 +12,14 @@ import {
 
 export const projects = [
     {
-        title: "Fire Gallery",
-        description: "A modern image gallery with Firebase Authentication, Firestore and drag-and-drop storage.",
+        title: {
+            en: "Fire Gallery",
+            ua: "Fire Gallery"
+        },
+        description: {
+            en: "A modern image gallery with Firebase Authentication, Firestore and drag-and-drop storage.",
+            ua: "Сучасна галерея зображень з аутентифікацією Firebase, Firestore та можливістю перетягування файлів (drag-and-drop)."
+        },
         tech: ["React", "TypeScript", "Firebase", "Tailwind"],
         category: "Web Dev",
         github: "https://github.com/OleksandrZadvornyi/fire-gallery",
@@ -22,8 +28,14 @@ export const projects = [
         color: "text-blue-400"
     },
     {
-        title: "Weather Forecasting Transformer",
-        description: "Deep learning model forecasting daily max temperatures using Time Series Transformers and GluonTS.",
+        title: {
+            en: "Weather Forecasting Transformer",
+            ua: "Weather Forecasting Transformer"
+        },
+        description: {
+            en: "Deep learning model forecasting daily max temperatures using Time Series Transformers and GluonTS.",
+            ua: "Модель глибокого навчання для прогнозування денних температур з використанням Time Series Transformers та GluonTS."
+        },
         tech: ["Python", "PyTorch", "GluonTS", "HuggingFace"],
         category: "Data Science",
         github: "https://github.com/OleksandrZadvornyi/weather-forecasting",
@@ -32,8 +44,14 @@ export const projects = [
         color: "text-emerald-400"
     },
     {
-        title: "Kal-Hans Backend",
-        description: "RESTful API for an e-commerce platform managing products, blogs and social posts.",
+        title: {
+            en: "Kal-Hans Backend",
+            ua: "Kal-Hans Backend"
+        },
+        description: {
+            en: "RESTful API for an e-commerce platform managing products, blogs and social posts.",
+            ua: "RESTful API для платформи електронної комерції, що керує продуктами, блогами та соціальними публікаціями."
+        },
         tech: ["Node.js", "Express", "MongoDB", "TypeScript"],
         category: "Web Dev",
         github: "https://github.com/OleksandrZadvornyi/kal-hans-backend",
@@ -42,8 +60,14 @@ export const projects = [
         color: "text-green-400"
     },
     {
-        title: "EEG Seizure Detection",
-        description: "Automated framework using Topological Data Analysis and Random Forest on CHB-MIT Scalp EEG data.",
+        title: {
+            en: "EEG Seizure Detection",
+            ua: "EEG Seizure Detection"
+        },
+        description: {
+            en: "Automated framework using Topological Data Analysis and Random Forest on CHB-MIT Scalp EEG data.",
+            ua: "Автоматизований фреймворк з використанням топологічного аналізу даних та Random Forest на даних CHB-MIT Scalp EEG."
+        },
         tech: ["Python", "MNE", "Scikit-Learn", "Streamlit"],
         category: "Data Science",
         github: "https://github.com/OleksandrZadvornyi/eeg",
@@ -52,8 +76,14 @@ export const projects = [
         color: "text-purple-400"
     },
     {
-        title: "WebdriverIO Automation",
-        description: "Robust E2E testing framework implementing the Page Object Model (POM) design pattern.",
+        title: {
+            en: "WebdriverIO Automation",
+            ua: "WebdriverIO Automation"
+        },
+        description: {
+            en: "Robust E2E testing framework implementing the Page Object Model (POM) design pattern.",
+            ua: "Надійний фреймворк для E2E тестування, що реалізує шаблон проектування Page Object Model (POM)."
+        },
         tech: ["JavaScript", "WebdriverIO", "Selenium", "Mocha"],
         category: "QA Automation",
         github: "https://github.com/OleksandrZadvornyi/webdriver-demo",
@@ -62,8 +92,14 @@ export const projects = [
         color: "text-orange-400"
     },
     {
-        title: "LLM Code Evaluation",
-        description: "Framework for assessing credibility of LLM-generated Python code using static analysis.",
+        title: {
+            en: "LLM Code Evaluation",
+            ua: "LLM Code Evaluation"
+        },
+        description: {
+            en: "Framework for assessing credibility of LLM-generated Python code using static analysis.",
+            ua: "Фреймворк для оцінки якості Python-коду, згенерованого LLM, за допомогою статичного аналізу."
+        },
         tech: ["Python", "LangChain", "Docker", "NLP"],
         category: "Data Science",
         github: "https://github.com/OleksandrZadvornyi/prompt-engineering",
@@ -72,8 +108,14 @@ export const projects = [
         color: "text-yellow-400"
     },
     {
-        title: "Audio Recorder (C++)",
-        description: "Enhanced Qt Audio Recorder implementing Observer, Command and Strategy patterns.",
+        title: {
+            en: "Audio Recorder (C++)",
+            ua: "Audio Recorder (C++)"
+        },
+        description: {
+            en: "Enhanced Qt Audio Recorder implementing Observer, Command and Strategy patterns.",
+            ua: "Розширений аудіо рекордер на Qt, що реалізує патерни Observer, Command та Strategy."
+        },
         tech: ["C++", "Qt Framework", "Design Patterns"],
         category: "Software Engineering",
         github: "https://github.com/OleksandrZadvornyi/audiorecorder",
@@ -82,8 +124,14 @@ export const projects = [
         color: "text-blue-600"
     },
     {
-        title: "Frontend Performance CLI",
-        description: "CLI tool to analyze frontend performance using Lighthouse and Puppeteer programmatically.",
+        title: {
+            en: "Frontend Performance CLI",
+            ua: "Frontend Performance CLI"
+        },
+        description: {
+            en: "CLI tool to analyze frontend performance using Lighthouse and Puppeteer programmatically.",
+            ua: "CLI інструмент для аналізу продуктивності фронтенду з використанням Lighthouse та Puppeteer."
+        },
         tech: ["JavaScript", "Puppeteer", "Lighthouse", "CLI"],
         category: "Web Dev",
         github: "https://github.com/OleksandrZadvornyi/frontend-performance-analyzer",
@@ -92,8 +140,14 @@ export const projects = [
         color: "text-pink-400"
     },
     {
-        title: "Kal-Hans Frontend",
-        description: "Modern e-commerce UI for the Kal-Hans brand. Features responsive design and connects to the Node.js backend.",
+        title: {
+            en: "Kal-Hans Frontend",
+            ua: "Kal-Hans Frontend"
+        },
+        description: {
+            en: "Modern e-commerce UI for the Kal-Hans brand. Features responsive design and connects to the Node.js backend.",
+            ua: "Сучасний інтерфейс електронної комерції для бренду Kal-Hans. Має адаптивний дизайн та підключається до бекенду на Node.js."
+        },
         tech: ["React", "TypeScript", "Tailwind", "Vite"],
         category: "Web Dev",
         github: "https://github.com/OleksandrZadvornyi/kal-hans-landing",
@@ -102,8 +156,14 @@ export const projects = [
         color: "text-teal-400"
     },
     {
-        title: "Dental Clinic Multi-Lang",
-        description: "A multilingual landing page supporting 5 languages. Built with a custom Webpack configuration and i18next.",
+        title: {
+            en: "Dental Clinic Multi-Lang",
+            ua: "Dental Clinic Multi-Lang"
+        },
+        description: {
+            en: "A multilingual landing page supporting 5 languages. Built with a custom Webpack configuration and i18next.",
+            ua: "Багатомовна цільова сторінка з підтримкою 5 мов. Створена з кастомною конфігурацією Webpack та i18next."
+        },
         tech: ["JavaScript", "Webpack", "i18next", "SCSS"],
         category: "Web Dev",
         github: "https://github.com/OleksandrZadvornyi/dental-clinic-landing",
@@ -112,8 +172,14 @@ export const projects = [
         color: "text-cyan-500"
     },
     {
-        title: "Educate Platform",
-        description: "A responsive education platform landing page featuring modern animations and multi-language support.",
+        title: {
+            en: "Educate Platform",
+            ua: "Educate Platform"
+        },
+        description: {
+            en: "A responsive education platform landing page featuring modern animations and multi-language support.",
+            ua: "Адаптивна цільова сторінка освітньої платформи з сучасною анімацією та підтримкою кількох мов."
+        },
         tech: ["Vite", "JavaScript", "CSS3", "Animations"],
         category: "Web Dev",
         github: "https://github.com/OleksandrZadvornyi/educate-landing",

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { LuFileText, LuMic, LuBookOpen, LuExternalLink, LuCalendar, LuCircleCheck, LuClock, LuUsers } from "react-icons/lu";
 
@@ -5,6 +6,8 @@ import { publications } from '../data/publications';
 import presentationImg from '../assets/presentation.jpg';
 
 const StatusBadge = ({ status }) => {
+  const { t } = useTranslation();
+
   const styles = {
     "Published": "bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300 border-emerald-200 dark:border-emerald-500/30",
     "Presented": "bg-blue-100 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300 border-blue-200 dark:border-blue-500/30",
@@ -17,10 +20,16 @@ const StatusBadge = ({ status }) => {
     "In Review": <LuClock size={14} />
   };
 
+  const statusLabels = {
+    "Published": t('publications.status.published'),
+    "Presented": t('publications.status.presented'),
+    "In Review": t('publications.status.review')
+  };
+
   return (
     <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border ${styles[status]}`}>
       {icons[status]}
-      {status}
+      {statusLabels[status]}
     </span>
   );
 };
@@ -52,6 +61,9 @@ const AuthorList = ({ authors }) => {
 };
 
 const Publications = () => {
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language === 'ua' ? 'ua' : 'en';
+
   return (
     <section id="publications" className="py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,10 +71,10 @@ const Publications = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Research & <span className="text-blue-500">Publications</span>
+            {t('publications.title')} <span className="text-blue-500">{t('publications.highlight')}</span>
           </h2>
           <p className="text-slate-600 dark:text-gray-400 max-w-3xl mx-auto">
-            My academic background in Computer Science and research demonstrates my ability to solve complex algorithmic problems. My research focuses on AI, Time Series Analysis and Code Quality.
+            {t('publications.subtitle')}
           </p>
         </div>
 
@@ -79,10 +91,10 @@ const Publications = () => {
                   <div className="space-y-1">
                     <div className="flex items-center gap-2 text-sm text-blue-500 font-medium">
                       <LuBookOpen size={16} />
-                      <span>{pub.type}</span>
+                      <span>{pub.type[lang]}</span>
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">
-                      {pub.title}
+                      {pub.title[lang]}
                     </h3>
                   </div>
                   <div className="shrink-0 flex items-center gap-3">
@@ -93,10 +105,10 @@ const Publications = () => {
                   </div>
                 </div>
 
-                <AuthorList authors={pub.authors} />
+                <AuthorList authors={pub.authors[lang]} />
 
                 <p className="text-slate-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
-                  {pub.summary}
+                  {pub.summary[lang]}
                 </p>
 
                 <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 dark:border-slate-700/50">
@@ -116,7 +128,7 @@ const Publications = () => {
                       className="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                     >
                       {/* Change text based on whether it is a PDF or a website */}
-                      {pub.link.endsWith('.pdf') ? "View Abstract (PDF)" : "Read Paper"}
+                      {pub.link.endsWith('.pdf') ? t('publications.links.pdf') : t('publications.links.read')}
                       <LuExternalLink size={14} />
                     </a>
                   )}
@@ -138,7 +150,7 @@ const Publications = () => {
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-900/80 to-transparent flex items-end p-4">
                   <p className="text-white font-medium text-sm">
-                    Presenting Master's Thesis results at XIV Int. Conference
+                    {t('publications.spotlight.imageCaption')}
                   </p>
                 </div>
               </div>
@@ -148,9 +160,9 @@ const Publications = () => {
                     <LuMic size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Public Speaking</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white text-sm">{t('publications.spotlight.speakingTitle')}</h4>
                     <p className="text-xs text-slate-500 dark:text-gray-400 mt-1">
-                      Experienced in presenting complex technical findings to scientific audiences.
+                      {t('publications.spotlight.speakingDesc')}
                     </p>
                   </div>
                 </div>
@@ -160,9 +172,9 @@ const Publications = () => {
                     <LuFileText size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Technical Writing</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white text-sm">{t('publications.spotlight.writingTitle')}</h4>
                     <p className="text-xs text-slate-500 dark:text-gray-400 mt-1">
-                      Authored 3 peer-reviewed papers on AI and Software Engineering.
+                      {t('publications.spotlight.writingDesc')}
                     </p>
                   </div>
                 </div>

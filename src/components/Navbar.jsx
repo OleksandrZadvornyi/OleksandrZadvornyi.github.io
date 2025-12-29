@@ -1,16 +1,33 @@
 import { useState } from 'react';
 import { LuMenu, LuX, LuSun, LuMoon } from "react-icons/lu";
+import { useTranslation } from 'react-i18next';
 
 const Navbar = ({ theme, toggleTheme }) => {
+  const { t, i18n } = useTranslation();
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'ua' : 'en';
+    i18n.changeLanguage(newLang);
+  };
+
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Research', href: '#publications' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
+    { name: t('nav.about'), href: '#about' },
+    { name: t('nav.projects'), href: '#projects' },
+    { name: t('nav.research'), href: '#publications' },
+    { name: t('nav.skills'), href: '#skills' },
+    { name: t('nav.contact'), href: '#contact' },
   ];
+
+  const LanguageButton = () => (
+    <button
+      onClick={toggleLanguage}
+      className="px-3 py-2 rounded-lg transition-colors hover:bg-slate-100 dark:hover:bg-white dark:bg-slate-800 shadow-md text-slate-600 dark:text-gray-300 font-bold text-sm tracking-wide"
+      aria-label="Toggle Language"
+    >
+      {i18n.language === 'en' ? 'EN' : 'UA'}
+    </button>
+  );
 
   return (
     <nav className="fixed w-full z-50 backdrop-blur-md transition-colors duration-300 bg-white/80 border-slate-200 dark:bg-slate-900/80 dark:border-slate-800 border-b">
@@ -22,6 +39,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             </a>
           </div>
 
+          {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               {navLinks.map((link) => (
@@ -34,24 +52,33 @@ const Navbar = ({ theme, toggleTheme }) => {
                 </a>
               ))}
 
-              {/* Theme Toggle Button */}
-              <button
-                onClick={toggleTheme}
-                className="p-2 rounded-lg transition-colors hover:bg-slate-100 dark:hover:bg-white dark:bg-slate-800 shadow-md text-slate-600 dark:text-gray-300"
-                aria-label="Toggle Theme"
-              >
-                {theme === 'dark' ? <LuSun size={20} /> : <LuMoon size={20} />}
-              </button>
+              <div className="flex items-center gap-4 border-l border-slate-200 dark:border-slate-700 pl-6">
+                {/* Language Switcher (Desktop) */}
+                <LanguageButton />
+
+                {/* Theme Toggle Button */}
+                <button
+                  onClick={toggleTheme}
+                  className="p-2 rounded-lg transition-colors hover:bg-slate-100 dark:hover:bg-white dark:bg-slate-800 shadow-md text-slate-600 dark:text-gray-300"
+                  aria-label="Toggle Theme"
+                >
+                  {theme === 'dark' ? <LuSun size={20} /> : <LuMoon size={20} />}
+                </button>
+              </div>
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Layout */}
           <div className="md:hidden flex items-center gap-4">
+            {/* Language Switcher (Mobile) */}
+            <LanguageButton />
+
             {/* Mobile Theme Toggle */}
             <button onClick={toggleTheme} className="text-slate-600 dark:text-gray-400">
               {theme === 'dark' ? <LuSun size={20} /> : <LuMoon size={20} />}
             </button>
 
+            {/* Hamburger Menu */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-slate-900"

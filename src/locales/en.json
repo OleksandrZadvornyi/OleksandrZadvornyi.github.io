@@ -1,0 +1,112 @@
+{
+    "translation": {
+        "nav": {
+            "about": "About",
+            "projects": "Projects",
+            "research": "Research",
+            "skills": "Skills",
+            "contact": "Contact"
+        },
+        "hero": {
+            "greeting": "Hi, I'm",
+            "name": "Oleksandr",
+            "role": "Software Engineer specializing in modern web development and test automation.",
+            "description": " I build reliable, scalable applications and ensure quality using",
+            "and": "and",
+            "buttons": {
+                "projects": "View Projects",
+                "cv": "Download CV"
+            }
+        },
+        "about": {
+            "title": "About",
+            "me": "Me",
+            "cards": {
+                "education": {
+                    "title": "Education",
+                    "degree": "Master of Software Engineering",
+                    "date": "Graduated Dec 2025"
+                },
+                "qa": {
+                    "title": "QA Automation",
+                    "role": "End-to-End Testing",
+                    "tech": "WebdriverIO & CI/CD Pipelines"
+                },
+                "code": {
+                    "title": "Clean Code",
+                    "role": "Design Patterns & Architecture",
+                    "desc": "Focused on scalability & readability"
+                }
+            },
+            "bio": {
+                "p1": "I am a Software Engineer focused on the web ecosystem. My journey is driven by a desire to build applications that are not only performant but also robust and reliable. I specialize in TypeScript, React and Test Automation.",
+                "p2": "I distinguish myself by handling the full development lifecycle. Whether I'm building a responsive frontend interface or writing complex E2E test suites in WebdriverIO, I prioritize code quality and stability.",
+                "p3": "While my academic background is in Data Science (giving me strong analytical skills), my professional passion lies in Web Development and Quality Assurance."
+            }
+        },
+        "projects": {
+            "title": "Featured",
+            "highlight": "Projects",
+            "subtitle": "A selection of my work in Software Development, Data Science and QA Automation.",
+            "filterAll": "All",
+            "viewGithub": "View all repositories on GitHub",
+            "code": "Code",
+            "demo": "Live Demo"
+        },
+        "publications": {
+            "title": "Research &",
+            "highlight": "Publications",
+            "subtitle": "My academic background in Computer Science and research demonstrates my ability to solve complex algorithmic problems. My research focuses on AI, Time Series Analysis and Code Quality.",
+            "status": {
+                "published": "Published",
+                "presented": "Presented",
+                "review": "In Review"
+            },
+            "links": {
+                "pdf": "View Abstract (PDF)",
+                "read": "Read Paper"
+            },
+            "spotlight": {
+                "imageCaption": "Presenting Master's Thesis results at XIV Int. Conference",
+                "speakingTitle": "Public Speaking",
+                "speakingDesc": "Experienced in presenting complex technical findings to scientific audiences.",
+                "writingTitle": "Technical Writing",
+                "writingDesc": "Authored 3 peer-reviewed papers on AI and Software Engineering."
+            }
+        },
+        "skills": {
+            "title": "Technical",
+            "highlight": "Skills",
+            "subtitle": "A comprehensive toolset for building scalable web applications and data-driven solutions.",
+            "categories": {
+                "frontend": "Frontend Development",
+                "qa": "QA Automation",
+                "backend": "Backend & Cloud",
+                "languages": "Languages",
+                "data": "Data Science & Research",
+                "tools": "Tools"
+            }
+        },
+        "contact": {
+            "title": "Let's",
+            "highlight": "Connect",
+            "description": "I am currently looking for new opportunities in Web Development and QA Automation. Whether you have a question, a project idea or just want to say hi, feel free to reach out!",
+            "cards": {
+                "email": {
+                    "title": "Email Me",
+                    "cta": "Send Message"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "desc": "Let's connect professionally",
+                    "cta": "View Profile"
+                }
+            },
+            "location": "Ternopil, Ukraine"
+        },
+        "footer": {
+            "rights": "Oleksandr Zadvornyi. All rights reserved.",
+            "built": "Built with"
+        }
+    }
+}

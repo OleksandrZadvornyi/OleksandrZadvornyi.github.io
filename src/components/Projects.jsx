@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Get unique categories from data
@@ -19,10 +21,10 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Featured <span className="text-blue-500">Projects</span>
+            {t('projects.title')} <span className="text-blue-500">{t('projects.highlight')}</span>
           </h2>
           <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A selection of my work in Software Development, Data Science and QA Automation.
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -59,7 +61,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors"
           >
-            View all repositories on GitHub →
+            {t('projects.viewGithub')} →
           </a>
         </div>
 
