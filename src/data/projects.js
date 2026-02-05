@@ -16,7 +16,6 @@ import kalHansLandingImg from '../assets/projects/kal-hans-landing.png';
 import eegImg from '../assets/projects/eeg.png';
 import educateImg from '../assets/projects/educate.png';
 import denticsImg from '../assets/projects/dentics.png';
-import kalHansBackendImg from '../assets/projects/kal-hans-backend.png';
 import webdriverioDemoImg from '../assets/projects/webdriverio-demo.png';
 import frontendAnalyzerImg from '../assets/projects/frontend-analyzer.png';
 import llmCodeEvaluationImg from '../assets/projects/llm-code-eval.png';
@@ -56,23 +55,6 @@ export const projects = [
         demo: null,
         icon: LuActivity,
         color: "text-emerald-400"
-    },
-    {
-        title: {
-            en: "Kal-Hans Backend",
-            ua: "Kal-Hans Backend"
-        },
-        image: kalHansBackendImg,
-        description: {
-            en: "RESTful API for an e-commerce platform managing products, blogs and social posts.",
-            ua: "RESTful API для платформи електронної комерції, що керує продуктами, блогами та соціальними публікаціями."
-        },
-        tech: ["Node.js", "Express", "MongoDB", "TypeScript"],
-        category: ["Web Dev"],
-        github: "https://github.com/OleksandrZadvornyi/kal-hans-backend",
-        demo: null,
-        icon: LuDatabase,
-        color: "text-green-400"
     },
     {
         title: {
@@ -144,19 +126,19 @@ export const projects = [
     },
     {
         title: {
-            en: "Kal-Hans Frontend",
-            ua: "Kal-Hans Frontend"
+            en: "Kal-Hans Fullstack",
+            ua: "Kal-Hans Fullstack"
         },
         image: kalHansLandingImg,
         description: {
-            en: "Modern e-commerce UI for the Kal-Hans brand. Features responsive design and connects to the Node.js backend.",
-            ua: "Сучасний інтерфейс електронної комерції для бренду Kal-Hans. Має адаптивний дизайн та підключається до бекенду на Node.js."
+            en: "Full-stack e-commerce application. Monorepo combining a React/Vite frontend with a Node.js/Express & MongoDB backend.",
+            ua: "Full-stack додаток електронної комерції. Монорепозиторій, що об'єднує фронтенд на React/Vite та бекенд на Node.js/Express і MongoDB."
         },
-        tech: ["React", "TypeScript", "Tailwind", "Vite"],
+        tech: ["React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind"],
         category: ["Web Dev"],
-        github: "https://github.com/OleksandrZadvornyi/kal-hans-landing",
+        github: "https://github.com/OleksandrZadvornyi/kal-hans-fullstack",
         demo: "https://kal-hans.netlify.app/",
-        icon: LuMonitor,
+        icon: LuGlobe,
         color: "text-teal-400"
     },
     {
