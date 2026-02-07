@@ -8,7 +8,8 @@ import {
     LuMonitor,
     LuGlobe,
     LuBookOpen,
-    LuListTodo
+    LuListTodo,
+    LuZap
 } from "react-icons/lu";
 
 import fireGalleryImg from '../assets/projects/firegallery.png';
@@ -20,58 +21,59 @@ import webdriverioDemoImg from '../assets/projects/webdriverio-demo.png';
 import frontendAnalyzerImg from '../assets/projects/frontend-analyzer.png';
 import llmCodeEvaluationImg from '../assets/projects/llm-code-eval.png';
 import todoAppImg from '../assets/projects/todo-app.png';
-
+import spyCatImg from '../assets/projects/spy-cat.png';
 
 export const projects = [
     {
         title: {
-            en: "Fire Gallery",
-            ua: "Fire Gallery"
+            en: "SimplyDone",
+            ua: "SimplyDone"
         },
-        image: fireGalleryImg,
+        image: todoAppImg,
         description: {
-            en: "A modern image gallery with Firebase Authentication, Firestore and drag-and-drop storage.",
-            ua: "Сучасна галерея зображень з аутентифікацією Firebase, Firestore та можливістю перетягування файлів (drag-and-drop)."
+            en: "Minimalist To-Do app with clean React architecture, local storage persistence, and robust E2E testing with WebdriverIO.",
+            ua: "Мінімалістичний To-Do додаток з чистою архітектурою React, збереженням даних та надійними E2E тестами на WebdriverIO."
         },
-        tech: ["React", "TypeScript", "Firebase", "Tailwind"],
+        tech: ["React 19", "TypeScript", "Tailwind", "WebdriverIO"],
+        category: ["Web Dev", "QA Automation"],
+        github: "https://github.com/OleksandrZadvornyi/to-do-app",
+        demo: "https://simply-done.netlify.app/",
+        icon: LuListTodo,
+        color: "text-blue-500"
+    },
+    {
+        title: {
+            en: "Spy Cat Agency",
+            ua: "Spy Cat Agency"
+        },
+        image: spyCatImg,
+        description: {
+            en: "Full-stack dashboard with Next.js and FastAPI. Features real-time agent recruitment and breed validation via external APIs.",
+            ua: "Full-stack дашборд на Next.js та FastAPI. Функціонал включає найм агентів у реальному часі та валідацію порід через зовнішні API."
+        },
+        tech: ["Next.js", "FastAPI", "TypeScript", "Tailwind"],
         category: ["Web Dev"],
-        github: "https://github.com/OleksandrZadvornyi/fire-gallery",
-        demo: "https://fire-gallery-84947.web.app/signin",
+        github: "https://github.com/OleksandrZadvornyi/spy-cat-fullstack",
+        demo: null,
         icon: LuLayoutDashboard,
-        color: "text-blue-400"
+        color: "text-indigo-500"
     },
     {
         title: {
-            en: "Weather Forecasting Transformer",
-            ua: "Weather Forecasting Transformer"
+            en: "Kal-Hans Fullstack",
+            ua: "Kal-Hans Fullstack"
         },
+        image: kalHansLandingImg,
         description: {
-            en: "Deep learning model forecasting daily max temperatures using Time Series Transformers and GluonTS.",
-            ua: "Модель глибокого навчання для прогнозування денних температур з використанням Time Series Transformers та GluonTS."
+            en: "Full-stack e-commerce application. Monorepo combining a React/Vite frontend with a Node.js/Express & MongoDB backend.",
+            ua: "Full-stack додаток електронної комерції. Монорепозиторій, що об'єднує фронтенд на React/Vite та бекенд на Node.js/Express і MongoDB."
         },
-        tech: ["Python", "PyTorch", "GluonTS", "HuggingFace"],
-        category: ["Data Science"],
-        github: "https://github.com/OleksandrZadvornyi/weather-forecasting",
-        demo: null,
-        icon: LuActivity,
-        color: "text-emerald-400"
-    },
-    {
-        title: {
-            en: "EEG Seizure Detection",
-            ua: "EEG Seizure Detection"
-        },
-        image: eegImg,
-        description: {
-            en: "Automated framework using Topological Data Analysis and Random Forest on CHB-MIT Scalp EEG data.",
-            ua: "Автоматизований фреймворк з використанням топологічного аналізу даних та Random Forest на даних CHB-MIT Scalp EEG."
-        },
-        tech: ["Python", "MNE", "Scikit-Learn", "Streamlit"],
-        category: ["Data Science"],
-        github: "https://github.com/OleksandrZadvornyi/eeg",
-        demo: null,
-        icon: LuActivity,
-        color: "text-purple-400"
+        tech: ["React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind"],
+        category: ["Web Dev"],
+        github: "https://github.com/OleksandrZadvornyi/kal-hans-fullstack",
+        demo: "https://kal-hans.netlify.app/",
+        icon: LuGlobe,
+        color: "text-teal-400"
     },
     {
         title: {
@@ -92,20 +94,20 @@ export const projects = [
     },
     {
         title: {
-            en: "LLM Code Evaluation",
-            ua: "LLM Code Evaluation"
+            en: "Fire Gallery",
+            ua: "Fire Gallery"
         },
-        image: llmCodeEvaluationImg,
+        image: fireGalleryImg,
         description: {
-            en: "Framework for assessing credibility of LLM-generated Python code using static analysis.",
-            ua: "Фреймворк для оцінки якості Python-коду, згенерованого LLM, за допомогою статичного аналізу."
+            en: "A modern image gallery with Firebase Authentication, Firestore and drag-and-drop storage.",
+            ua: "Сучасна галерея зображень з аутентифікацією Firebase, Firestore та можливістю перетягування файлів (drag-and-drop)."
         },
-        tech: ["Python", "LangChain", "Docker", "NLP"],
-        category: ["Data Science"],
-        github: "https://github.com/OleksandrZadvornyi/prompt-engineering",
-        demo: null,
-        icon: LuSearch,
-        color: "text-yellow-400"
+        tech: ["React", "TypeScript", "Firebase", "Tailwind"],
+        category: ["Web Dev"],
+        github: "https://github.com/OleksandrZadvornyi/fire-gallery",
+        demo: "https://fire-gallery-84947.web.app",
+        icon: LuLayoutDashboard,
+        color: "text-blue-400"
     },
     {
         title: {
@@ -123,23 +125,6 @@ export const projects = [
         demo: null,
         icon: LuTerminal,
         color: "text-pink-400"
-    },
-    {
-        title: {
-            en: "Kal-Hans Fullstack",
-            ua: "Kal-Hans Fullstack"
-        },
-        image: kalHansLandingImg,
-        description: {
-            en: "Full-stack e-commerce application. Monorepo combining a React/Vite frontend with a Node.js/Express & MongoDB backend.",
-            ua: "Full-stack додаток електронної комерції. Монорепозиторій, що об'єднує фронтенд на React/Vite та бекенд на Node.js/Express і MongoDB."
-        },
-        tech: ["React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind"],
-        category: ["Web Dev"],
-        github: "https://github.com/OleksandrZadvornyi/kal-hans-fullstack",
-        demo: "https://kal-hans.netlify.app/",
-        icon: LuGlobe,
-        color: "text-teal-400"
     },
     {
         title: {
@@ -177,19 +162,52 @@ export const projects = [
     },
     {
         title: {
-            en: "SimplyDone",
-            ua: "SimplyDone"
+            en: "Weather Forecasting Transformer",
+            ua: "Weather Forecasting Transformer"
         },
-        image: todoAppImg,
         description: {
-            en: "Minimalist To-Do app with clean React architecture, local storage persistence, and robust E2E testing with WebdriverIO.",
-            ua: "Мінімалістичний To-Do додаток з чистою архітектурою React, збереженням даних та надійними E2E тестами на WebdriverIO."
+            en: "Deep learning model forecasting daily max temperatures using Time Series Transformers and GluonTS.",
+            ua: "Модель глибокого навчання для прогнозування денних температур з використанням Time Series Transformers та GluonTS."
         },
-        tech: ["React 19", "TypeScript", "Tailwind", "WebdriverIO"],
-        category: ["Web Dev", "QA Automation"],
-        github: "https://github.com/OleksandrZadvornyi/to-do-app",
-        demo: "https://simply-done.netlify.app/",
-        icon: LuListTodo,
-        color: "text-blue-500"
-    }
+        tech: ["Python", "PyTorch", "GluonTS", "HuggingFace"],
+        category: ["Data Science"],
+        github: "https://github.com/OleksandrZadvornyi/weather-forecasting",
+        demo: null,
+        icon: LuActivity,
+        color: "text-emerald-400"
+    },
+    {
+        title: {
+            en: "EEG Seizure Detection",
+            ua: "EEG Seizure Detection"
+        },
+        image: eegImg,
+        description: {
+            en: "Automated framework using Topological Data Analysis and Random Forest on CHB-MIT Scalp EEG data.",
+            ua: "Автоматизований фреймворк з використанням топологічного аналізу даних та Random Forest на даних CHB-MIT Scalp EEG."
+        },
+        tech: ["Python", "MNE", "Scikit-Learn", "Streamlit"],
+        category: ["Data Science"],
+        github: "https://github.com/OleksandrZadvornyi/eeg",
+        demo: null,
+        icon: LuActivity,
+        color: "text-purple-400"
+    },
+    {
+        title: {
+            en: "LLM Code Evaluation",
+            ua: "LLM Code Evaluation"
+        },
+        image: llmCodeEvaluationImg,
+        description: {
+            en: "Framework for assessing credibility of LLM-generated Python code using static analysis.",
+            ua: "Фреймворк для оцінки якості Python-коду, згенерованого LLM, за допомогою статичного аналізу."
+        },
+        tech: ["Python", "LangChain", "Docker", "NLP"],
+        category: ["Data Science"],
+        github: "https://github.com/OleksandrZadvornyi/prompt-engineering",
+        demo: null,
+        icon: LuSearch,
+        color: "text-yellow-400"
+    },
 ];
