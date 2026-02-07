@@ -4,7 +4,8 @@ import {
   LuServer,
   LuTerminal,
   LuCpu,
-  LuLayoutDashboard
+  LuLayoutDashboard,
+  LuWrench
 } from "react-icons/lu";
 import { useTranslation } from 'react-i18next';
 
@@ -37,37 +38,37 @@ const Skills = () => {
       title: t('skills.categories.frontend'),
       icon: LuLayoutDashboard,
       color: "bg-pink-500",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Vite", "HTML5/CSS3"]
+      skills: ["React 19", "Next.js", "TypeScript", "Tailwind CSS", "Vite"]
     },
     {
       title: t('skills.categories.qa'),
       icon: LuTerminal,
       color: "bg-orange-500",
-      skills: ["WebdriverIO", "Selenium", "Mocha/Chai", "Page Object Model", "E2E Testing"]
+      skills: ["WebdriverIO", "Puppeteer", "Lighthouse", "GitHub Actions", "Page Object Model"]
     },
     {
       title: t('skills.categories.backend'),
       icon: LuServer,
       color: "bg-emerald-500",
-      skills: ["Node.js", "Express", "MongoDB", "REST APIs", "Git/GitHub"]
+      skills: ["Node.js", "FastAPI", "MongoDB", "Firebase", "REST APIs"]
     },
     {
       title: t('skills.categories.languages'),
       icon: LuCode,
       color: "bg-green-500",
-      skills: ["JavaScript (ES6+)", "TypeScript", "Python", "C++", "SQL"]
+      skills: ["JavaScript (ES6+)", "Python", "C++", "SQL", "Bash"]
     },
     {
       title: t('skills.categories.data'),
       icon: LuCpu,
       color: "bg-purple-500",
-      skills: ["Pandas", "PyTorch", "Time Series Analysis", "Jupyter"]
+      skills: ["PyTorch", "Pandas", "GluonTS", "Deep Learning", "Time Series"]
     },
     {
       title: t('skills.categories.tools'),
-      icon: LuDatabase,
+      icon: LuWrench,
       color: "bg-yellow-500",
-      skills: ["VS Code", "Docker", "Edge DevTools"]
+      skills: ["Git", "Docker", "VS Code", "Postman", "Linux"]
     }
   ];
 
